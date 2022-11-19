@@ -104,7 +104,7 @@ function LandingPage() {
       <div className="flex flex-col p-10 relative md:h-1/3 md:flex md:flex-col md:justify-center">
         <div className="md:max-w-3xl md:mx-auto">
           <div className="flex  p-3 gap-5  md:mx-auto">
-            {/* <img src="/Rectangle 34.svg" className="md:h-fit" /> */}
+            <img src="/Rectangle 34 copy.svg" alt="" className="md:h-40" />
             <p className="font-avenir_light leading-7 md:font-avenir_light md:text-2xl lg:text-4xl">
               “Love me has been the defining moment for my relationship. I
               always like to share with my partner how much they mean to me.
@@ -199,12 +199,12 @@ function LandingPage() {
           </button>
         </div>
 
-        <div className="">
-          <img src="/LOVE RIGHT.png" alt="" className="md:absolute left-2 top-2  w-14" />
+        <div className=" hidden md:block">
+          <img src="/LOVE RIGHT.png" alt="" className="md:absolute md:left-2 md:top-2  md:w-14" />
           <img
             src="/pink love left.png"
             alt=""
-            className="md:absolute  right-9 w-14"
+            className= " md:absolute  right-9 w-14"
           />
         </div>
       </div>
