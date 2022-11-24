@@ -1,5 +1,32 @@
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --text-secondary: #ffffff;
+  --form-bg: #ffffff;
+}
+
 .App {
-  text-align: center;
+  background-color: var(--background);
+  transition: all 1s;
+  color: var(--text-primary);
+
+  
+}
+
+[data-theme="dark"] {
+  --background: #000;
+  --text-primary: #fff;
+  --form-bg: #191919;
+  --pink-text: #000;
+}
+
+.theme-toggle {
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+width: 50px;
+border: 1px solid #282c34;
 }
 
 .App-logo {

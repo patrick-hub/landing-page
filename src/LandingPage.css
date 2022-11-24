@@ -1,0 +1,64 @@
+:root {
+    --text-color: #ffffff;
+    --dark-text: #464646;
+    --pink-text: #fff7f5;
+
+}
+
+@media screen and (max-width: 500px) {
+   .section-three {
+    display: none;
+   }
+}
+
+.section-one {
+    background: url("../public/lovemeFrame.svg") no-repeat ;
+    background-position:center;
+    background-size: cover;
+    color: var(--text-color);
+    padding: 30px;
+
+}
+
+.section-two {
+    position: relative;
+    height: 90vh;
+}
+
+.section-three {
+    height: 90vh;
+    background-color: var(--pink-text);
+
+}
+
+.section-four {
+    padding: 10px 90px;
+    color: var(--text-color);
+
+   
+    
+}
+
+.keyword--section, .generate--letter, .payment--section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.generating-steps {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.generate--letter {
+ justify-content: flex-end;
+}
+
+.vector--line {
+    position: absolute;
+    top: 5px;
+}
+
