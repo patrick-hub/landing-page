@@ -3,10 +3,10 @@ import LandingPage from './component/LandingPage';
 import { BsToggles2} from 'react-icons/bs';
 import useLocalStorage from 'use-local-storage';
 import './App.css'
+import '../src/LandingPage.css'
 
 function App() {
   const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
-
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme)

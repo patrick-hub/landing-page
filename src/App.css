@@ -5,19 +5,19 @@
   --form-bg: #ffffff;
 }
 
-.App {
+/* .App {
   background-color: var(--background);
   transition: all 1s;
   color: var(--text-primary);
 
   
-}
+} */
 
 [data-theme="dark"] {
-  --background: #000;
+  --background: #141b1f;
   --text-primary: #fff;
   --form-bg: #191919;
-  --pink-text: #000;
+  --pink-text: #141b1f;
 }
 
 .theme-toggle {

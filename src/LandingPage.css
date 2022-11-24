@@ -1,64 +1,184 @@
-:root {
-    --text-color: #ffffff;
-    --dark-text: #464646;
-    --pink-text: #fff7f5;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap");
 
+:root {
+	--text-color: #ffffff;
+	--dark-text: #464646;
+	--pink-text: #fff7f5;
+	--test-bg: #fffafa;
 }
 
-@media screen and (max-width: 500px) {
-   .section-three {
-    display: none;
-   }
+.dark-theme {
+	background-color: var(--background);
+	transition: all 1s;
+	color: var(--text-primary);
+}
+
+.App {
+    background-color: var(--background);
+    transition: all 1s;
+    color: var(--text-primary);
+  
+    
+  }
+
+[data-theme="dark"] {
+	--background: #111b21;
+	--text-primary: #fff;
+	--form-bg: #191919;
+	--pink-text: #111b21;
+	--test-bg: #131b20;
+	transition: all 1s;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+}
+
+.icon {
+	position: fixed;
+	border: 1px solid #282c34;
+	width: 50px;
+	height: 30px;
+	border-radius: 20px;
+	z-index: 1;
+}
+
+.theme-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-top: 58px;
+	padding: 20px;
 }
 
 .section-one {
-    background: url("../public/lovemeFrame.svg") no-repeat ;
-    background-position:center;
-    background-size: cover;
-    color: var(--text-color);
-    padding: 30px;
+	background: url("/public/lovemeFrame.svg");
+	background-position: center;
+	background-size: cover;
+	color: var(--text-color);
+	padding: 30px;
+}
 
+.animated-video {
+	width: 100%;
+	height: 100%;
+	margin-top: 7%;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .section-two {
-    position: relative;
-    height: 90vh;
+	position: relative;
+	height: 90vh;
+	background-color: var(--pink-text);
+	border-bottom: 1px solid #464646;
+	font-size: 20px;
 }
 
 .section-three {
-    height: 90vh;
-    background-color: var(--pink-text);
-
+	height: 90vh;
+	background-color: var(--pink-text);
+	border-bottom: 1px solid #fff;
+	gap: 20px;
 }
 
 .section-four {
-    padding: 10px 90px;
-    color: var(--text-color);
-
-   
-    
+	padding: 10px 90px;
 }
 
-.keyword--section, .generate--letter, .payment--section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-
+.keyword--section,
+.generate--letter,
+.payment--section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px;
 }
 
 .generating-steps {
-display: flex;
-flex-direction: column;
-gap: 20px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 
 .generate--letter {
- justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 .vector--line {
-    position: absolute;
-    top: 5px;
+	position: absolute;
+	top: 5px;
 }
 
+.section-five {
+	background-color: var(--test-bg);
+	padding: 30px;
+}
+.testimonials {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	gap: 30px;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.testimonial-content {
+	width: 352px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 40px;
+}
+
+@media screen and (max-width: 800px) {
+	.section-one {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hero-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.animated-video {
+		width: 100%;
+		height: 100%;
+		margin-bottom: -5%;
+	}
+
+	.generating-steps {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.keyword--section,
+	.payment--section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.generate--letter {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.testimonials {
+		display: flex;
+		flex-direction: column;
+	}
+}
