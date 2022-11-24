@@ -193,7 +193,7 @@ function LandingPage() {
         </h1>
         <div className="testimonials">
           <div className=" testimonial-content">
-            <img src="/mainquote.png" alt="" />
+		  <img src="/mainquote.png" alt="" />
             <p className="">
               “LoveMe has been the defining moment for my relationship. I always
               like to share with my partener how much they mean to me. With
@@ -210,7 +210,7 @@ function LandingPage() {
             <span className="font-bold">- Patrick A.</span>
           </div>
           <div className="testimonial-content mb-6">
-            <img src="/mainquote.png" alt="" />
+		  <img src="/mainquote.png" alt="" />
             <p>
               “Creating a love letter has always been a hassel to me. Writing
               one isn’t a chore anymore. It is so easy that it only takes three
